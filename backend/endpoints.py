@@ -3,10 +3,10 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from typing import List, Optional
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
-from .database import get_db
-from . import models, schemas
-from .ml.recommender import recommend_for_member
-from .auth import get_password_hash, verify_password, create_access_token, ACCESS_TOKEN_EXPIRE_MINUTES
+from database import get_db
+import models, schemas
+from ml.recommender import recommend_for_member
+from auth import get_password_hash, verify_password, create_access_token, ACCESS_TOKEN_EXPIRE_MINUTES
 import json
 from datetime import datetime, timedelta
 
