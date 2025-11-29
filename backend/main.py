@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .endpoints import router as api_router
-from .database import engine, Base
+from endpoints import router as api_router
+from database import engine, Base
 
 # Create tables on startup (simple dev mode)
 Base.metadata.create_all(bind=engine)
