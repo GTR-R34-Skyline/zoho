@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
-from .database import SessionLocal, engine, Base
-from .models import Member, Task, LearningPath, Settings
-from .auth import get_password_hash
+from database import SessionLocal, engine, Base
+from models import Member, Task, LearningPath, Settings
+from auth import get_password_hash
 from datetime import datetime, timedelta
 import random
 
